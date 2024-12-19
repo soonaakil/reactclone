@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/soonaakil/reactclone/static/css/main.10e9db8d.css",
-    "main.js": "/soonaakil/reactclone/static/js/main.8c510cb8.js",
-    "static/js/453.b9f0a0fd.chunk.js": "/soonaakil/reactclone/static/js/453.b9f0a0fd.chunk.js",
-    "static/media/weblogo.png": "/soonaakil/reactclone/static/media/weblogo.b0cc449f2b9153fac366.png",
-    "static/media/sharing_data_parent_clicked.png": "/soonaakil/reactclone/static/media/sharing_data_parent_clicked.595fef3f33437647ab05.png",
-    "static/media/sharing_data_child_clicked.png": "/soonaakil/reactclone/static/media/sharing_data_child_clicked.f96a657c043f5a7c77dd.png",
-    "static/media/sharing_data_parent.png": "/soonaakil/reactclone/static/media/sharing_data_parent.8110841535d3acbfc380.png",
-    "static/media/sharing_data_child.png": "/soonaakil/reactclone/static/media/sharing_data_child.18028516c308e9a8632c.png",
-    "index.html": "/soonaakil/reactclone/index.html",
-    "main.10e9db8d.css.map": "/soonaakil/reactclone/static/css/main.10e9db8d.css.map",
-    "main.8c510cb8.js.map": "/soonaakil/reactclone/static/js/main.8c510cb8.js.map",
-    "453.b9f0a0fd.chunk.js.map": "/soonaakil/reactclone/static/js/453.b9f0a0fd.chunk.js.map"
+    "main.css": "/soonaakil/reactclone.git/static/css/main.10e9db8d.css",
+    "main.js": "/soonaakil/reactclone.git/static/js/main.d850b087.js",
+    "static/js/453.b9f0a0fd.chunk.js": "/soonaakil/reactclone.git/static/js/453.b9f0a0fd.chunk.js",
+    "static/media/weblogo.png": "/soonaakil/reactclone.git/static/media/weblogo.b0cc449f2b9153fac366.png",
+    "static/media/sharing_data_parent_clicked.png": "/soonaakil/reactclone.git/static/media/sharing_data_parent_clicked.595fef3f33437647ab05.png",
+    "static/media/sharing_data_child_clicked.png": "/soonaakil/reactclone.git/static/media/sharing_data_child_clicked.f96a657c043f5a7c77dd.png",
+    "static/media/sharing_data_parent.png": "/soonaakil/reactclone.git/static/media/sharing_data_parent.8110841535d3acbfc380.png",
+    "static/media/sharing_data_child.png": "/soonaakil/reactclone.git/static/media/sharing_data_child.18028516c308e9a8632c.png",
+    "index.html": "/soonaakil/reactclone.git/index.html",
+    "main.10e9db8d.css.map": "/soonaakil/reactclone.git/static/css/main.10e9db8d.css.map",
+    "main.d850b087.js.map": "/soonaakil/reactclone.git/static/js/main.d850b087.js.map",
+    "453.b9f0a0fd.chunk.js.map": "/soonaakil/reactclone.git/static/js/453.b9f0a0fd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.10e9db8d.css",
-    "static/js/main.8c510cb8.js"
+    "static/js/main.d850b087.js"
   ]
 }
