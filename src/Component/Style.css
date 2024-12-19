@@ -1,0 +1,589 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    overflow: hidden;
+    background-color: #fff;
+    color: #58C4DC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px 0px 15px;
+}
+.header .img-sec{
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    font-weight: 500;
+    font-size: small;
+}
+.header .img-sec img{
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+}
+.header .img-sec a{
+    color: #798194;
+    text-decoration: none;
+}
+.header .img-sec a:hover{
+    text-decoration: underline;
+    color: #20839a;
+}
+.nav-menu ul .fa-icon{
+    font-size: x-large;
+}
+.header .nav-menu ul{
+    display: flex;
+    list-style: none;
+}
+/* .nav-menu ul li{
+  color: #238db0;
+} */
+.header .nav-menu ul li{
+    padding: 10px 12px 4px 12px;
+    margin-top: 2px;
+    align-items: center;
+}
+.header .nav-menu ul li:hover{
+    background-color: rgb(238, 236, 236);
+    padding: 10px 12px 4px 12px;
+    border-radius: 25px;
+    margin-top: 2px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active-learn-div{
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.nav-menu ul a.active {
+  background-color: #e6f7ff;
+  padding: 10px;
+  border-radius: 19px 20px;
+}
+.nav-menu ul a{
+  text-decoration: none;
+  margin-top: 12px;
+  color: #238db0;
+}
+
+.header .nav-menu ul li{
+    /* margin-left: 30px; */
+    color: #404757;
+    /* color: #238db0; */
+    font-weight: 500;
+}
+/* .header .input-area input{
+    background-color: #f7f8f9;
+    border: none;
+    width: 580px;
+    padding: 12px;
+    border-radius: 17px;
+    cursor: pointer;
+} */
+
+/* ============== Search Bar ============== */
+.input-box {
+    position: relative;
+    /* height: 76px; */
+    height: 40px;
+    max-width: 900px;
+    width: 100%;
+    /* background: #fff; */
+    background: #ebecf0;
+    margin: 0 20px;
+    border-radius: 20px;
+    /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
+    cursor: pointer;
+  }
+  .input-box i,
+  .input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .input-box i {
+    left: 20px;
+    /* font-size: 30px; */
+    font-size: 20px;
+    /* color: #707070; */
+    color: #b3b9c7;
+  }
+  .input-box input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 0 155px 0 65px;
+    background-color: transparent;
+  }
+  .input-box .btn-1 {
+    right: 55px;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #fff; */
+    color: #b3b9c7;
+    border: none;
+    /* padding: 12px 30px; */
+    padding: 0px 10px;
+    /* border-radius: 6px; */
+    border-radius: 5px;
+    /* background-color: #4070f4; */
+    background-color: #fff;
+    /* cursor: pointer; */
+  }
+  .input-box .btn-2 {
+    right: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    /* color: #fff; */
+    color: #b3b9c7;
+    border: none;
+    /* padding: 12px 30px; */
+    padding: 0px 10px;
+    /* border-radius: 6px; */
+    border-radius: 5px;
+    /* background-color: #4070f4; */
+    background-color: #fff;
+    /* cursor: pointer; */
+  }
+
+  .input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 500px) {
+    .input-box {
+      height: 66px;
+      margin: 0 8px;
+    }
+    .input-box i {
+      left: 12px;
+      font-size: 25px;
+    }
+    .input-box input {
+      padding: 0 112px 0 50px;
+    }
+    .input-box .button {
+      right: 12px;
+      font-size: 14px;
+      padding: 8px 18px;
+    }
+  }
+/* ============== End of Search Bar ============== */
+
+/* =================== Left Sidebar Start Here ======================= */
+.left-sidebar {
+  width: 300px;
+  background-color: #fff;
+  color: #000;
+  height: 100vh;
+  /* padding-top: 20px; */
+  position: fixed;
+  /* border: 1px solid red; */
+  /* margin-top: 80px; */
+}
+.left-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.left-sidebar li {
+  margin-bottom: 10px;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 0px 15px 15px 0px;
+  font-weight: 700;
+  color: #333;
+}
+
+.menu-title:hover {
+  background-color: rgb(232, 231, 231);
+}
+.menu-title.active {
+  background-color: #e6f7ff;
+  color: #087ca3;
+  font-weight: 700;
+}
+ 
+.sub-menu {
+  background-color: #fff;
+}
+
+.sub-menu li {
+  font-size: 13px;
+  font-weight: 500;
+  color: #4c5261;
+  padding: 10px;
+  border-radius: 0px 15px 15px 0px;
+}
+
+.sub-menu li:hover {
+  background-color: rgb(232, 231, 231);
+}
+
+/* ========== End of Left Sidebar ========== */
+
+/* =================== Main Content Start Here ======================= */
+.main-content{
+  max-width: 100vh;
+  /* margin-right: 100px; */
+  /* border: 1px solid red; */
+  margin-right: 70px;
+}
+.learn-react{
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.learn-react a{
+  font-weight: 600;
+  text-decoration: none;
+}
+.learn-react a:hover{
+  text-decoration: underline;
+  color: #087ca3;
+
+}
+.learn-react div{
+  color: #087ca3;
+}
+
+.read-first-sec .un-list{
+  border: 1px solid rgb(216, 214, 214);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 40px;
+  margin: 25px 0px;
+  background-color: #f7f8fa;
+  width: 800px;
+}
+.read-first-sec .un-list ul{
+  margin-left: 20px;
+  color: #505663;
+}
+
+/* =============== This is Card Area =============== */
+/* .card-div-1{
+  margin: 30px 0px;
+  width: 900px;
+  height: 150px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-2{
+  margin: 30px 0px;
+  width: 900px;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+.card-div-3{
+  margin: 30px 0px;
+  width: 730px;
+  height: 400px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+}
+/* .card-div-4{
+  margin: 30px 0px;
+  width: 900px;
+  height: 230px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+
+/* .card-div-5{
+  margin: 30px 0px;
+  width: 900px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-6{
+  margin: 30px 0px;
+  width: 900px;
+  height: 120px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+
+/* .card-div-7{
+  margin: 30px 0px;
+  width: 900px;
+  height: 140px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-8{
+  margin: 30px 0px;
+  width: 900px;
+  height: 160px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+.card-div-9{
+  margin: 30px 0px;
+  width: 730px;
+  height: 400px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+}
+/* .card-div-10{
+  margin: 30px 0px;
+  width: 900px;
+  height: 300px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-11{
+  margin: 30px 0px;
+  width: 900px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-12{
+  margin: 30px 0px;
+  width: 900px;
+  height: 100px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-13{
+  margin: 30px 0px;
+  width: 900px;
+  height: 150px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-14{
+  margin: 30px 0px;
+  width: 900px;
+  height: 240px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+.card-div-15{
+  margin: 30px 0px;
+  width: 730px;
+  height: 450px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+}
+/* .card-div-16{
+  margin: 30px 0px;
+  width: 900px;
+  height: 270px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-17{
+  margin: 30px 0px;
+  width: 900px;
+  height: 60px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-18{
+  margin: 30px 0px;
+  width: 900px;
+  height: 111px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-19{
+  margin: 30px 0px;
+  width: 900px;
+  height: 330px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+.card-div-20{
+  margin: 30px 0px;
+  width: 730px;
+  height: 450px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+}
+/* .card-div-21{
+  margin: 30px 0px;
+  width: 900px;
+  height: 500px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-22{
+  margin: 30px 0px;
+  width: 900px;
+  height: 400px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+/* .card-div-23{
+  margin: 30px 0px;
+  width: 900px;
+  height: 200px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+} */
+.card-div-24{
+  margin: 30px 0px;
+  width: 730px;
+  height: 450px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 20px rgb(209, 211, 209);
+}
+/* =================== End of Main Content Here ======================= */
+
+/* ========================= Right Sidebar Start Here ========================== */
+.right-sidebar{
+  position: fixed;
+  z-index: 50;
+  top: 70px;
+  right: 12px;
+  background-color: #fff;
+  width: 300px;
+  line-height: 40px;
+}
+.right-sidebar h3,h4{
+  font-weight: 700;
+  font-size: small;
+}
+.right-sidebar .active{ 
+  padding-left: 10px;
+  width: 350px;
+  background-color: #e6f7ff;
+  color: #087ca3;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.right-sidebar ul li{
+  list-style-type: none;
+}
+.right-sidebar ul li a{
+  text-decoration: none;
+  color: #575d6b;
+  font-size: 11px;
+  font-weight: 700;
+  margin-left: 13px;
+}
+.right-sidebar ul li a:hover{
+  color: #087ca3;
+}
+/* ============= End of Right Sidebar CSS ============== */
+
+/* ================================== Footer CSS ========================================== */
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 45px 0px;
+  line-height: 27px;
+  /* margin-right: 100px; */
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+.footer h3{
+  color: #404757;
+}
+.footer ul li{
+  list-style: none;
+}
+.footer ul li a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+.footer ul li a:hover{
+  text-decoration: underline;
+}
+.footer .ff-2 h3:hover{
+  text-decoration: underline;
+}
+.footer .ff-2 .ff-2-social{
+  display: flex;
+  gap: 7px;
+  color: #404757;
+  font-size: 21px;
+}
+.footer .ff-1{
+  margin-top: 10px;
+}
+.footer .f-logo{
+  display: flex;
+  gap: 5px;
+  color: #277de6;
+}
+.footer .f-logo h3{
+  margin-top: -10px;
+}
+.pagination{
+  display: block;
+  line-height: 20px;
+  border: 1px solid red;
+  width: 300px;
+}
+.pagination h4{
+  margin-left: 130px;
+}
+.pagination p{
+  color: #2e91b3;
+}
+.pagination{
+  /* border: 1px solid red; */
+  /* padding: 40px 0px 40px 80px; */
+  /* border-radius: 7px; */
+  /* overflow: hidden; */
+  /* margin-right: 80px; */
+}
+.pagination:hover{
+  background-color: #ebecf0;
+  cursor: pointer;
+  & p{
+       text-decoration: underline;
+  }
+}
