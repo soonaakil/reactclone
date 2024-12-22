@@ -2,6 +2,7 @@ import React from 'react'
 import { FaGithub, FaRegMoon } from "react-icons/fa";
 import { IoLanguageSharp } from "react-icons/io5";
 import img1 from '../images/weblogo.png';
+import { CiSearch } from "react-icons/ci";
 
 function Header() {
   return (
@@ -15,11 +16,19 @@ function Header() {
                 <CiSearch />
                 <input type="text" placeholder='Search' />
                 </div> */}
-                <div class="input-box">
+                {/* <div class="input-box">
                     <i class="uil uil-search"></i>
                     <input type="text" placeholder="Search" />
                     <button class="button btn-1">ctrl</button>
                     <button class="button btn-2">K</button>
+                </div> */}
+                <div class="searchbar">
+                    <CiSearch style={{marginLeft: '10px', fontSize: '21px'}}/>
+                    <input type="text" placeholder="Search" />
+                    <div className="btn">
+                      <button class="btn1">Ctrl</button>
+                      <button class="btn2">K</button>
+                    </div>
                 </div>
 
                 <div className="nav-menu">

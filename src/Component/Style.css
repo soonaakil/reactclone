@@ -17,7 +17,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px 0px 15px;
+    padding-bottom: 7px;
 }
+.scrolled .header {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .header .img-sec{
     align-items: center;
     display: flex;
@@ -93,33 +99,79 @@
 } */
 
 /* ============== Search Bar ============== */
-.input-box {
-    position: relative;
+.searchbar{
+ display: flex;
+ width: 900px;
+ background-color: #ebecf0;
+ color: grey;
+ padding: 2px;
+ border-radius: 21px;
+ cursor: pointer;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.searchbar input{
+  padding: 7px;
+  width: 780px;
+  border-radius: 21px;
+  /* margin-left: 5px; */
+  background-color: #ebecf0;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-weight: 800;
+  font-size: 15px;
+}
+.searchbar .btn{
+  display: flex;
+  gap: 5px;
+  margin-right: 10px;
+}
+.searchbar .btn .btn1{
+  background-color: #fff;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: #656669;
+  font-size: 11px;
+}
+.searchbar .btn .btn2{
+  background-color: #fff;
+  border: none;
+  padding: 3px 7px;
+  border-radius: 7px;
+  color: #656669;
+  font-size: 11px;
+}
+
+  /* .input-box {
+    position: relative; */
     /* height: 76px; */
-    height: 40px;
+    /* height: 40px;
     max-width: 900px;
-    width: 100%;
+    width: 100%; */
     /* background: #fff; */
-    background: #ebecf0;
+    /* background: #ebecf0;
     margin: 0 20px;
-    border-radius: 20px;
+    border-radius: 20px; */
     /* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); */
-    cursor: pointer;
-  }
-  .input-box i,
+    /* cursor: pointer;
+  } */
+  /* .input-box i,
   .input-box .button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-  }
-  .input-box i {
-    left: 20px;
+  } */
+  /* .input-box i {
+    left: 20px; */
     /* font-size: 30px; */
-    font-size: 20px;
+    /* font-size: 20px; */
     /* color: #707070; */
-    color: #b3b9c7;
-  }
-  .input-box input {
+    /* color: #b3b9c7;
+  } */
+  /* .input-box input {
     height: 100%;
     width: 100%;
     outline: none;
@@ -128,42 +180,44 @@
     border: none;
     padding: 0 155px 0 65px;
     background-color: transparent;
-  }
-  .input-box .btn-1 {
+  } */
+  /* .input-box .btn-1 {
     right: 55px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 400; */
     /* color: #fff; */
-    color: #b3b9c7;
-    border: none;
+    /* color: #b3b9c7;
+    border: none; */
     /* padding: 12px 30px; */
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     /* border-radius: 6px; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* background-color: #4070f4; */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* cursor: pointer; */
-  }
-  .input-box .btn-2 {
+  /* } */
+  /* .input-box .btn-2 {
     right: 20px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 400; */
     /* color: #fff; */
-    color: #b3b9c7;
-    border: none;
+    /* color: #b3b9c7;
+    border: none; */
     /* padding: 12px 30px; */
-    padding: 0px 10px;
+    /* padding: 0px 10px; */
     /* border-radius: 6px; */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* background-color: #4070f4; */
-    background-color: #fff;
+    /* background-color: #fff; */
     /* cursor: pointer; */
-  }
+  /* } */
 
-  .input-box .button:active {
+  /* .input-box .button:active {
     transform: translateY(-50%) scale(0.98);
-  }
-  
+  } */
+
+  /* End of Searchbar */
+
   /* Responsive */
   @media screen and (max-width: 500px) {
     .input-box {
@@ -187,6 +241,9 @@
 
 /* =================== Left Sidebar Start Here ======================= */
 .left-sidebar {
+  position: fixed;
+  top: 90px;
+  left: 10px;
   width: 300px;
   background-color: #fff;
   color: #000;
@@ -477,14 +534,21 @@
   border: 1px solid #fff;
   box-shadow: 5px 5px 20px rgb(209, 211, 209);
 }
+
+.read-eleventh-sec .road-img{
+  display: flex;
+  gap: 65px;
+  margin: 40px 0px;
+}
 /* =================== End of Main Content Here ======================= */
 
 /* ========================= Right Sidebar Start Here ========================== */
 .right-sidebar{
   position: fixed;
   z-index: 50;
-  top: 70px;
-  right: 12px;
+  top: 80;
+  /* right: 12px; */
+  right: 0;
   background-color: #fff;
   width: 300px;
   line-height: 40px;
@@ -494,16 +558,18 @@
   font-size: small;
 }
 .right-sidebar .active{ 
-  padding-left: 10px;
-  width: 350px;
   background-color: #e6f7ff;
-  color: #087ca3;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
+  & a{
+    color: #087ca3;
+    font-weight: bolder;
+  }
 }
-
 .right-sidebar ul li{
+  /* border: 1px solid red; */
   list-style-type: none;
+  /* background-color: #e6f7ff; */
 }
 .right-sidebar ul li a{
   text-decoration: none;
@@ -511,6 +577,7 @@
   font-size: 11px;
   font-weight: 700;
   margin-left: 13px;
+  padding: 10px 50px 10px 10px;
 }
 .right-sidebar ul li a:hover{
   color: #087ca3;
@@ -541,6 +608,27 @@
 .footer ul li a:hover{
   text-decoration: underline;
 }
+.footer .ff-2{
+  margin-top: 30px;
+}
+.footer .ff-1 div{
+  /* border: 1px solid red; */
+  margin-top: 25px;
+}
+.footer .ff-2 h3{
+  font-size: 18px;
+}
+.footer .ff-2 ul li{
+  line-height: 35px;
+}
+.footer .footer-social ul{
+  /* border: 1px solid red; */
+  display: flex;
+  gap: 5px;
+  font-size: 21px;
+  margin-top: 35px;
+  /* line-height: 50px; */
+}
 .footer .ff-2 h3:hover{
   text-decoration: underline;
 }
@@ -550,8 +638,8 @@
   color: #404757;
   font-size: 21px;
 }
-.footer .ff-1{
-  margin-top: 10px;
+  .footer .ff-1{
+  margin-top: 13px;
 }
 .footer .f-logo{
   display: flex;
@@ -560,12 +648,29 @@
 }
 .footer .f-logo h3{
   margin-top: -10px;
+  font-size: 18px;
 }
 .pagination{
   display: block;
   line-height: 20px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 300px;
+  padding: 25px 10px 25px 80px;
+  border-radius: 5px;
+  margin-left: 425px;
+  margin-top: 80px;
+  font-weight: 800;
+}
+.pagination a{
+  text-decoration: none;
+  color: #2e91b3;
+}
+.pagination:hover{
+  background-color: #ebecf0;
+  cursor: pointer;
+  & a{
+       border-bottom: 2px solid;
+  }
 }
 .pagination h4{
   margin-left: 130px;
@@ -579,11 +684,4 @@
   /* border-radius: 7px; */
   /* overflow: hidden; */
   /* margin-right: 80px; */
-}
-.pagination:hover{
-  background-color: #ebecf0;
-  cursor: pointer;
-  & p{
-       text-decoration: underline;
-  }
 }

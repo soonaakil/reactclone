@@ -9,7 +9,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaBluesky } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa6";
 import { FaMeta } from "react-icons/fa6";
-// import './MainContent.css';
+import './MainContent.css';
 import Highlight from '../HighlightSyntax/Highlight';
 
 
@@ -163,12 +163,14 @@ const codeSnippet23 = `function MyButton({ count, onClick }) {
 
 return (
     <>
-        <div className="main-content">
+        <div className="main-content section" id="section0">
           <div className="read-first-sec">
             <div className='learn-react'>
                 <a href="#learn">
                     <div>
-                        LEARN REACT 
+                      {/* <section id="section0" className="section"> */}
+                         LEARN REACT 
+                      {/* </section> */}
                     </div>
                 </a>
                 <div><FaAngleRight style={{marginTop: '8px'}} /></div>
@@ -194,7 +196,9 @@ return (
           </div>{/* End of read-first-sec */}
 
           <div className="read-second-sec">
-               <h2 style={{margin: '10px 0px'}}>Creating and nesting components</h2>
+               <section id="section1" className="section">
+                 <h2 style={{margin: '10px 0px'}}>Creating and nesting components</h2>
+               </section>
                 <p>
                 React apps are made out of components. A component is a piece of the
                 UI (user interface) that has its own logic and appearance. A component can
@@ -223,7 +227,9 @@ return (
           </div>{/* End of read-second-sec */}
 
             <div className='read-third-sec'>
-                 <h2 style={{margin: '20px 0px'}}>Writing markup with JSX </h2>
+                <section id="section2" className="section">
+                  <h2 style={{margin: '20px 0px'}}>Writing markup with JSX </h2>
+                </section>
                  <p>
                     The markup syntax you’ve seen above is called JSX. It is optional, 
                     but most React projects use JSX for its convenience. All of the tools we 
@@ -244,7 +250,9 @@ return (
             </div> {/* End of read-third-sec */}
 
             <div className="read-fourth-sec">
-                 <h2 style={{margin: '20px 0px'}}>Adding styles</h2>
+                <section id="section3" className="section">
+                   <h2 style={{margin: '20px 0px'}}>Adding styles</h2>
+                </section>
                  <p>
                     In React, you specify a CSS class with className. 
                     It works the same way as the HTML class attribute:
@@ -266,7 +274,9 @@ return (
             </div> {/* End of read-fourth-sec */}
 
             <div className="read-fifth-sec">
-                 <h2 style={{margin: '20px 0px'}}>Displaying data</h2>
+                <section id="section4" className="section">
+                   <h2 style={{margin: '20px 0px'}}>Displaying data</h2>
+                </section>
                  <p>
                     JSX lets you put markup into JavaScript. Curly braces let you “escape back” into JavaScript so 
                     that you can embed some variable from your code and display it to the user. For example, this will display user.name:
@@ -294,7 +304,9 @@ return (
             </div> {/* End of read-fifth-sec */}
 
             <div className="read-sixth-sec">
-                <h2 style={{margin: '20px 0px'}}>Conditional rendering</h2>
+                <section id="section5" className="section">
+                   <h2 style={{margin: '20px 0px'}}>Conditional rendering</h2>
+                </section>
                 <p>
                     In React, there is no special syntax for writing conditions. Instead, you’ll use the same techniques as you use when writing regular JavaScript code. For example, you can use an if statement to conditionally include JSX:
                 </p>
@@ -322,7 +334,9 @@ return (
             </div>{/* End of read-sixth-sec */}
                
             <div className="read-seventh-sec">
-               <h2 style={{margin: '20px 0px'}}>Rendering lists</h2>
+              <section id="section6" className="section">
+                  <h2 style={{margin: '20px 0px'}}>Rendering lists</h2>
+              </section>
                <p>
                     You will rely on JavaScript features like for loop and the array map() function to
                     render lists of components.
@@ -346,7 +360,9 @@ return (
             </div>{/* End of read-seventh-sec */}
 
             <div className="read-eighth-sec">
-               <h2 style={{margin: '20px 0px'}}>Responding to events</h2>
+              <section id="section7" className="section">
+                 <h2 style={{margin: '20px 0px'}}>Responding to events</h2>
+              </section>
                <p>
                    You can respond to events by declaring event handler functions inside your components:
                </p>
@@ -360,7 +376,9 @@ return (
             </div>{/* End of read-eighth-sec */}
            
             <div className="read-ninth-sec">
+              <section id="section8" className="section">
                 <h2 style={{margin: '20px 0px'}}>Updating the screen</h2>
+              </section>
                 <p>
                     Often, you’ll want your component to “remember” some information and display it. For example, maybe you want to count the number of times a button is clicked. To do this, add state to your component.
                 </p>
@@ -395,7 +413,9 @@ return (
             </div>{/* End of read-ninth-sec*/}
 
             <div className="read-tenth-sec">
-                <h2 style={{margin: '20px 0px'}}>Using Hooks</h2>
+                <section id="section9" className="section">
+                   <h2 style={{margin: '20px 0px'}}>Using Hooks</h2>
+                </section>
                 <p>
                     Functions starting with use are called Hooks. useState is a built-in Hook provided by React. You can find other built-in Hooks in the API reference. You can also write your own Hooks by combining the existing ones.
                 </p>
@@ -405,7 +425,9 @@ return (
             </div>{/* End of read-tenth-sec */}
 
             <div className="read-eleventh-sec">
-                <h2 style={{margin: '20px 0px'}}>Sharing data between components</h2>
+                <section id="section10" className="section">
+                    <h2 style={{margin: '20px 0px'}}>Sharing data between components</h2>
+                </section>
                 <p>
                     In the previous example, each MyButton had its own independent count, and when each button was clicked, only the count for the button clicked changed:
                 </p>
@@ -460,7 +482,9 @@ return (
          </div>{/* End of read-eleventh-sec */}
 
          <div className="read-twelfth-sec">
-            <h2 style={{margin: '20px 0px'}}>Next Steps</h2>
+          <section id="section11" className="section">
+              <h2 style={{margin: '20px 0px'}}>Next Steps</h2>
+          </section>
             <p>
                By now, you know the basics of how to write React code!
             </p>
@@ -472,8 +496,8 @@ return (
             <div className="pagination">
                 {/* <h4 style={{marginLeft: '130px'}}>NEXT</h4> */}
                 <h4>NEXT</h4>
-                <FaAngleRight style={{marginLeft: '185px'}} />
-                <p>Tutorial: Tic-Tac-Toe</p>
+                  <FaAngleRight style={{marginLeft: '185px'}} />
+                <a href='/next'>Tutorial: Tic-Tac-Toe</a>
                 {/* <p style={{color: '#2e91b3'}}>Tutorial: Tic-Tac-Toe</p> */}
             </div>
          </div>{/* End of read-twelfth-sec */}
@@ -486,7 +510,7 @@ return (
         <div className="footer">
             <div className="ff-1">
                 <div className="f-logo">
-                   <FaMeta /><h3 style={{cursor: 'pointer'}}>Meta Open Source</h3>
+                   <FaMeta style={{marginTop: '-7px', fontSize: '20px'}} /><h3 style={{cursor: 'pointer'}}>Meta Open Source</h3>
                 </div>
                 <p>Copyright © Meta <br /> Platforms, Inc</p>
                 <p>uwu</p>
@@ -527,12 +551,14 @@ return (
                     <li><a href="#link">Privacy</a></li>
                     <li><a href="#link">Terms</a></li>
                 </ul>
-                <ul className='ff-2-social'>
-                    <li><a href="#social"><FaFacebook /></a></li>
-                    <li><a href="#social"><FaXTwitter /></a></li>
-                    <li><a href="#social"><FaBluesky /></a></li>
-                    <li><a href="#social"><FaGithub /></a></li>
-                </ul>
+                <div className='footer-social'>
+                    <ul>
+                        <li><a href="#social"><FaFacebook /></a></li>
+                        <li><a href="#social"><FaXTwitter /></a></li>
+                        <li><a href="#social"><FaBluesky /></a></li>
+                        <li><a href="#social"><FaGithub /></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div> 
